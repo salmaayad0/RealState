@@ -8,7 +8,7 @@ import { sliderSettings } from '../../utils/commen'
 export default function Rasdenices() {
   return (
     <>
-    <section className="r-warpper">
+    <section className="r-warpper" id='residencies'>
         <div className="paddings innerWidth r-container">
           <div className="flexColStart r-head">
             <span className='orangeText'>
