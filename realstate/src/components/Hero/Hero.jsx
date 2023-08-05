@@ -2,6 +2,7 @@ import React from "react";
 import "./Hero.css";
 import { HiLocationMarker } from "react-icons/hi";
 import CountUp from "react-countup";
+import { motion } from "framer-motion";
 
 function Hero() {
   return (
@@ -11,11 +12,18 @@ function Hero() {
         <div className="flexColStart he-left">
           <div className="he-title">
             <div className="orange-circle" />
-            <h1>
+            <motion.h1
+            initial={{y: "2.5rem", opacity: 0}}
+            animate={{y: 0, opacity: 1}}
+            transition={{
+              duration:2,
+              type:"spring"
+            }}
+            >
               Discover <br />
               Most Suitable <br />
               Property
-            </h1>
+            </motion.h1>
           </div>
 
           <div className="flexColStart he-desc">
@@ -58,9 +66,16 @@ function Hero() {
 
         {/* right side image side */}
         <div className="flexCenter he-right">
-          <div className="img-container">
+          <motion.div 
+          initial={{x: '7rem', opacity: 0}}
+          animate={{x: 0, opacity:1}}
+          transition={{
+            duration:2,
+            type:"spring"
+          }}
+          className="img-container">
             <img src="./media/hero-image.png" alt="home" />
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
