@@ -14,3 +14,14 @@
 .f-menu .orangeText{
     font-size: 1rem;
 }
+
+@media (max-width: 768px) {
+    .f-container{
+        justify-content: center;
+    }
+
+    .f-container>div{
+        align-items: center;
+        text-align: center;
+    }
+}

@@ -11,20 +11,20 @@ import Value from './components/value/Value';
 function App() {
   return (
     <>
-    <main className='app'>
-      <div>
-        <div className='white-gradient' />
-      <Header />
-      <Hero />
-      </div>
+      <main className='app'>
+        <div>
+          <div className='white-gradient' />
+          <Header />
+          <Hero />
+        </div>
 
-      <Companies />
-      <Rasdenices />
-      <Value />
-      <Contact />
-      <Start />
-      <Footer />
-    </main>
+        <Companies />
+        <Rasdenices />
+        <Value />
+        <Contact />
+        <Start />
+        <Footer />
+      </main>
     </>
   );
 }

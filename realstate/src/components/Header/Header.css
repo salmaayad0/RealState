@@ -13,6 +13,44 @@
     gap: 2rem;
 }
 
+.h-menu a{
+    padding: 0.313rem;
+}
+
 .h-menu>*:hover{
     cursor: pointer;
+}
+
+/* responsive nav */
+.menu-icon{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu-icon{
+        display: block;
+    }
+
+    .h-menu{
+        color: var(--black);
+        position: absolute;
+        top: 3rem;
+        right: 4rem;
+        background-color: whitesmoke;
+        flex-direction: column;
+        font-weight: 400;
+        padding: 3rem;
+        gap: 2rem;
+        border-radius: 10px;
+        align-items: flex-start;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+        transition: all 300ms ease-in-out;
+        z-index: 2;
+    }
+
+    .h-menu a:hover{
+        background-color: var(--black);
+        color: white;
+        cursor: pointer;
+    }
 }
